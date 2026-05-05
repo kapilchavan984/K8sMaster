@@ -1,0 +1,45 @@
+<form action="book.php" method="POST">
+
+<div class="form-row">
+  <div class="form-group">
+    <label>First Name</label>
+    <input type="text" name="name" required>
+  </div>
+  <div class="form-group">
+    <label>Phone</label>
+    <input type="tel" name="phone" required>
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Doctor</label>
+  <select name="doctor">
+    <option>Dr. Vijay Ade</option>
+  </select>
+</div>
+
+<div class="form-row">
+  <div class="form-group">
+    <label>Date</label>
+    <input type="date" name="appointment_date" required>
+  </div>
+  <div class="form-group">
+    <label>Time</label>
+    <select name="slot">
+      <option>10:00 AM</option>
+      <option>12:00 PM</option>
+      <option>5:00 PM</option>
+    </select>
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Message</label>
+  <textarea name="message"></textarea>
+</div>
+
+<button class="btn-submit">
+  <i class="fas fa-paper-plane"></i> Confirm Appointment
+</button>
+
+</form>

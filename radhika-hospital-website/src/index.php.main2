@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Radhika Multispeciality Hospital & Dialysis Centre | Mira Road East</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+:root {
+  --navy: #0b1f3a;
+  --navy-light: #122a4e;
+  --teal: #0ea5c7;
+  --teal-dark: #0987a6;
+  --gold: #e8a838;
+  --white: #ffffff;
+  --off-white: #f6f8fc;
+  --text-muted: #6b7fa0;
+  --border: rgba(14,165,199,0.15);
+  --card-bg: #ffffff;
+  --shadow: 0 12px 40px rgba(11,31,58,0.10);
+  --shadow-hover: 0 24px 60px rgba(11,31,58,0.18);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--navy);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* EMERGENCY BAR */
+.emergency-bar {
+  background: #c0392b;
+  color: white;
+  text-align: center;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.emergency-bar a { color: #ffd6d6; text-decoration: none; font-weight: 600; }
+.emergency-bar a:hover { color: white; }
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  transition: 0.3s;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.nav-logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--teal), #0a7fa0);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.nav-brand-text { display: flex; flex-direction: column; }
+.nav-brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.1;
+}
+.nav-brand-sub {
+  font-size: 10px;
+  color: var(--teal);
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+.nav-links a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+  letter-spacing: 0.2px;
+}
+.nav-links a:hover { color: var(--teal); }
+
+.nav-cta {
+  background: var(--teal);
+  color: white !important;
+  padding: 9px 20px;
+  border-radius: 8px;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.3px;
+  transition: 0.2s;
+}
+.nav-cta:hover { background: var(--teal-dark) !important; color: white !important; }
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  background: url('banner.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(11,31,58,0.95) 0%, rgba(11,31,58,0.75) 55%, rgba(11,31,58,0.30) 100%);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 60px;
+  width: 100%;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(14,165,199,0.15);
+  border: 1px solid rgba(14,165,199,0.3);
+  color: var(--teal);
+  padding: 7px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.hero-badge i { font-size: 10px; }
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: 700;
+  color: white;
+  line-height: 1.15;
+  max-width: 680px;
+  margin-bottom: 20px;
+}
+.hero h1 span { color: var(--teal); }
+
+.hero p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.72);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+  font-weight: 300;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary-hero {
+  background: var(--teal);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.25s;
+  border: 2px solid transparent;
+}
+.btn-primary-hero:hover {
+  background: transparent;
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.btn-outline-hero {
+  background: transparent;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid rgba(255,255,255,0.35);
+  transition: 0.25s;
+}
+.btn-outline-hero:hover { border-color: white; background: rgba(255,255,255,0.08); }
+
+/* HERO CARDS */
+.hero-stats {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  display: flex;
+  gap: 16px;
+}
+
+.hero-stat-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 16px;
+  padding: 20px 24px;
+  text-align: center;
+  color: white;
+  min-width: 110px;
+}
+.hero-stat-card .num {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1;
+}
+.hero-stat-card .lbl {
+  font-size: 11px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+
+/* SECTION COMMON */
+section { padding: 90px 40px; }
+.container { max-width: 1200px; margin: 0 auto; }
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
+  display: block;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+.section-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 540px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* SERVICES */
+.services { background: var(--off-white); }
+.services-header { margin-bottom: 56px; }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 18px;
+  padding: 36px 28px;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), #0ad4c3);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(14,165,199,0.09);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--teal);
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.service-card:hover .service-icon {
+  background: var(--teal);
+  color: white;
+}
+
+.service-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.service-card .learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.service-card .learn-more:hover { gap: 9px; }
+
+/* STATS */
+.stats { background: var(--navy); padding: 70px 40px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 30px 20px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+}
+.stat-item:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1;
+  display: block;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/* DOCTOR */
+.doctor { background: white; }
+.doctor-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.doctor-image-wrap {
+  position: relative;
+}
+
+.doctor-image-box {
+  width: 100%;
+  padding-top: 110%;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #e8f4fc, #d0eef9);
+  overflow: hidden;
+  position: relative;
+}
+
+.doctor-image-box img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 24px;
+}
+
+.doctor-tag {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--navy);
+  color: white;
+  padding: 20px 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(11,31,58,0.25);
+}
+.doctor-tag .years { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; color: var(--teal); }
+.doctor-tag .years-label { font-size: 11px; color: rgba(255,255,255,0.6); letter-spacing: 0.5px; }
+
+.doctor-info .section-title { margin-bottom: 6px; }
+.doctor-degree {
+  font-size: 15px;
+  color: var(--teal);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.doctor-bio {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 28px;
+  font-weight: 300;
+}
+
+.doctor-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.credential-pill {
+  background: var(--off-white);
+  border: 1px solid rgba(14,165,199,0.2);
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-size: 13px;
+  color: var(--navy);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.credential-pill i { color: var(--teal); font-size: 11px; }
+
+.btn-book {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--teal);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.btn-book:hover { background: var(--teal-dark); transform: translateY(-2px); }
+
+/* APPOINTMENT CTA */
+.appt-cta {
+  background: linear-gradient(130deg, var(--navy) 0%, #0e2d52 60%, #0b3a5a 100%);
+  padding: 90px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.appt-cta::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: rgba(14,165,199,0.07);
+}
+.appt-cta::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: 200px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(14,165,199,0.05);
+}
+
+.appt-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+}
+
+.appt-cta-left h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 3vw, 38px);
+  color: white;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.appt-cta-left h2 span { color: var(--teal); }
+.appt-cta-left p {
+  color: rgba(255,255,255,0.55);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.contact-options { display: flex; flex-direction: column; gap: 12px; }
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  transition: 0.25s;
+}
+.contact-item:hover { background: rgba(14,165,199,0.12); border-color: rgba(14,165,199,0.3); }
+.contact-item i {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.contact-item .ci-phone i { background: var(--teal); }
+.contact-item .ci-wa i { background: #25d366; }
+.contact-item span { font-size: 15px; font-weight: 500; }
+
+/* APPOINTMENT FORM */
+.appt-form {
+  background: white;
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+}
+
+.appt-form h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { margin-bottom: 14px; }
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 16px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--navy);
+  background: white;
+  outline: none;
+  transition: 0.2s;
+  appearance: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(14,165,199,0.12);
+}
+.form-group textarea { resize: vertical; min-height: 80px; }
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: var(--teal);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+.btn-submit:hover { background: var(--teal-dark); transform: translateY(-2px); }
+
+/* TESTIMONIALS */
+.testimonials { background: var(--off-white); }
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.testi-card {
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+.testi-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+
+.testi-stars { color: #f59e0b; font-size: 13px; margin-bottom: 14px; }
+.testi-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 22px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), #0ad4c3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.testi-name { font-size: 14px; font-weight: 600; color: var(--navy); }
+.testi-role { font-size: 12px; color: var(--text-muted); }
+
+/* FOOTER */
+footer {
+  background: #070f1c;
+  color: white;
+  padding: 60px 40px 30px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.footer-brand h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: white;
+}
+.footer-brand p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.footer-socials { display: flex; gap: 10px; }
+.footer-social {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.footer-social:hover { background: var(--teal); border-color: var(--teal); color: white; }
+
+.footer-col h4 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 18px;
+}
+
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.footer-links a:hover { color: var(--teal); }
+
+.footer-contact-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.footer-contact-item i { color: var(--teal); font-size: 13px; margin-top: 2px; }
+.footer-contact-item span { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 28px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+}
+
+/* HAMBURGER */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+  padding: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  nav { padding: 0 20px; }
+  .nav-links { display: none; flex-direction: column; gap: 0; }
+  .nav-links.open {
+    display: flex;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 10px 0 20px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .nav-links li a { display: block; padding: 12px 24px; }
+  .nav-toggle { display: block; }
+  .nav-cta { margin: 8px 24px 0; }
+  .hero-content { padding: 60px 20px; }
+  .hero-stats { display: none; }
+  .doctor-inner { grid-template-columns: 1fr; gap: 40px; }
+  .doctor-image-box { padding-top: 70%; }
+  .doctor-tag { bottom: -10px; right: 10px; }
+  .appt-inner { grid-template-columns: 1fr; gap: 36px; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  section { padding: 60px 20px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 580px) {
+  .hero h1 { font-size: 30px; }
+  .hero-actions { flex-direction: column; }
+  .btn-primary-hero, .btn-outline-hero { justify-content: center; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .stat-item:nth-child(2n) { border-right: none; }
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge, .hero h1, .hero p, .hero-actions {
+  animation: fadeUp 0.7s ease forwards;
+  opacity: 0;
+}
+.hero h1 { animation-delay: 0.15s; }
+.hero p { animation-delay: 0.28s; }
+.hero-actions { animation-delay: 0.4s; }
+.hero-badge { animation-delay: 0.05s; }
+
+/* SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+</style>
+</head>
+<body>
+
+<!-- EMERGENCY BAR -->
+<div class="emergency-bar">
+  🚨 24x7 Emergency Available — Call <a href="tel:9136373182">+91 91363 73182</a> &nbsp;|&nbsp; WhatsApp <a href="https://wa.me/918459106272">+91 84591 06272</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <a href="#" class="nav-brand">
+    <div class="nav-logo-icon"><i class="fas fa-hospital-alt"></i></div>
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">New Radhika Hospital</span>
+      <span class="nav-brand-sub">Multispeciality & Dialysis Centre</span>
+    </div>
+  </a>
+
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#doctor">Our Doctor</a></li>
+    <li><a href="#appointment">Appointment</a></li>
+    <li><a href="tel:9136373182" class="nav-cta"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-shield-alt"></i> NABH Accredited Care</div>
+    <h1>New Radhika Multispeciality Hospital <span>&amp; Dialysis Centre</span></h1>
+    <p>Advanced kidney dialysis, 24×7 emergency care, and expert homeopathic consultations — at Shital Nagar, Mira Road, Mira Bhayandar.</p>
+    <div class="hero-actions">
+      <a href="#appointment" class="btn-primary-hero"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+      <a href="#services" class="btn-outline-hero"><i class="fas fa-stethoscope"></i> Explore Services</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat-card">
+      <div class="num">10+</div>
+      <div class="lbl">Years of Care</div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="num">24/7</div>
+      <div class="lbl">Emergency</div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="num">5000+</div>
+      <div class="lbl">Patients Served</div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-num" data-target="5000">0</span>
+        <div class="stat-label">Patients Treated</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-num" data-target="10">0</span>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-num" data-target="24">0</span>
+        <div class="stat-label">Hour Emergency</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-num" data-target="98">0</span>
+        <div class="stat-label">Patient Satisfaction %</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FACILITIES STRIP -->
+<div style="background:#0e2a45;padding:22px 40px;overflow-x:auto;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+    <span style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);white-space:nowrap;margin-right:6px;">Our Facilities:</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">General Medicine</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">ICU</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Ventilator</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">CPAP</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Defibrillator</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">General Surgery</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Paediatrics</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Pathology</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Physiotherapy</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Kidney Stone Centre</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Neurology & Psychiatry</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">ENT</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Dermatology</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Joint & Spine Center</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Orthopedics Surgery</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Diabetic Care</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Liposuction & Weight Management</span>
+    <span style="background:rgba(14,165,199,0.12);border:1px solid rgba(14,165,199,0.25);color:rgba(255,255,255,0.85);padding:5px 14px;border-radius:50px;font-size:12px;white-space:nowrap;">Dialysis Centre</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Comprehensive Medical Services</h2>
+      <p class="section-sub">Our state-of-the-art facilities and expert team provide the full spectrum of care your family needs.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-procedures"></i></div>
+        <h3>Dialysis Centre</h3>
+        <p>Advanced haemodialysis services with modern equipment and trained staff for kidney care — available 24×7.</p>
+        <a href="#appointment" class="learn-more">Book Consult <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-ambulance"></i></div>
+        <h3>24×7 Emergency</h3>
+        <p>Round-the-clock emergency care with experienced physicians ready to handle critical situations at any hour.</p>
+        <a href="tel:9136373182" class="learn-more">Call Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+        <h3>ICU & Critical Care</h3>
+        <p>Intensive Care Unit with Ventilator, CPAP &amp; Defibrillator support for critical and life-threatening conditions.</p>
+        <a href="#appointment" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+        <h3>General Medicine</h3>
+        <p>Expert outpatient consultations for fevers, infections, chronic conditions and preventive health check-ups.</p>
+        <a href="#appointment" class="learn-more">Book Consult <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-scalpel-path"></i></div>
+        <h3>General Surgery</h3>
+        <p>Comprehensive surgical procedures performed by experienced surgeons in a fully equipped operation theatre.</p>
+        <a href="#appointment" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-baby"></i></div>
+        <h3>Paediatrics</h3>
+        <p>Dedicated child healthcare — from newborn care to adolescent health — with gentle, expert paediatricians.</p>
+        <a href="#appointment" class="learn-more">Book Consult <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-flask"></i></div>
+        <h3>Pathology Lab</h3>
+        <p>In-house pathology for fast, accurate blood tests, urine analysis and all routine investigations on-site.</p>
+        <a href="#appointment" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-walking"></i></div>
+        <h3>Physiotherapy</h3>
+        <p>Rehabilitative physiotherapy for post-surgical recovery, sports injuries, and musculoskeletal disorders.</p>
+        <a href="#appointment" class="learn-more">Book Session <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-gem"></i></div>
+        <h3>Kidney Stone Centre</h3>
+        <p>Specialised diagnosis and treatment for kidney stones using the latest non-invasive and surgical techniques.</p>
+        <a href="#appointment" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <h3>Neurology &amp; Psychiatry</h3>
+        <p>Expert care for neurological disorders, mental health conditions, and psychiatric consultations with empathy.</p>
+        <a href="#appointment" class="learn-more">Book Consult <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-ear-listen"></i></div>
+        <h3>ENT</h3>
+        <p>Specialised diagnosis and treatment for Ear, Nose and Throat conditions across all age groups.</p>
+        <a href="#appointment" class="learn-more">Book Consult <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-hand-dots"></i></div>
+        <h3>Dermatology</h3>
+        <p>Comprehensive skin care — treating acne, eczema, psoriasis, infections and cosmetic skin concerns.</p>
+        <a href="#appointment" class="learn-more">Book Consult <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-bone"></i></div>
+        <h3>Orthopedics &amp; Joint &amp; Spine</h3>
+        <p>Advanced orthopedic surgery, joint replacement, and spine care for fractures, arthritis and back pain.</p>
+        <a href="#appointment" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-syringe"></i></div>
+        <h3>Diabetic Care</h3>
+        <p>Holistic diabetes management including blood sugar monitoring, medication, diet counselling and foot care.</p>
+        <a href="#appointment" class="learn-more">Book Consult <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-weight-scale"></i></div>
+        <h3>Liposuction &amp; Weight Management</h3>
+        <p>Safe, medically supervised weight management programmes and liposuction procedures by trained specialists.</p>
+        <a href="#appointment" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-pills"></i></div>
+        <h3>Homoeopathic Care</h3>
+        <p>Expert homoeopathic consultations by Dr. Vijay Dilip Ade offering natural treatments for chronic ailments.</p>
+        <a href="#appointment" class="learn-more">Book Consult <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section class="doctor" id="doctor">
+  <div class="container">
+    <div class="doctor-inner">
+      <div class="doctor-image-wrap reveal">
+        <div class="doctor-image-box">
+          <img src="doctor.jpg" alt="Dr. Vijay Dilip Ade" onerror="this.style.display='none'">
+        </div>
+        <div class="doctor-tag">
+          <div class="years">10+</div>
+          <div class="years-label">Years Experience</div>
+        </div>
+      </div>
+
+      <div class="doctor-info reveal">
+        <span class="section-label">Meet Your Doctor</span>
+        <h2 class="section-title">Dr. Vijay Dilip Ade</h2>
+        <div class="doctor-degree">BHMS | Consultant Physician</div>
+        <p class="doctor-bio">Dr. Vijay Dilip Ade is a registered Homoeopathic physician serving patients at New Radhika Multispeciality Hospital & Dialysis Centre, Mira Road East. With a compassionate, patient-first approach, he treats a wide range of chronic and acute conditions holistically — helping hundreds of families in Mira Bhayandar regain their health naturally.</p>
+
+        <div class="doctor-credentials">
+          <span class="credential-pill"><i class="fas fa-graduation-cap"></i> BHMS Certified</span>
+          <span class="credential-pill"><i class="fas fa-user-md"></i> Homeopath &amp; Consultant</span>
+          <span class="credential-pill"><i class="fas fa-rupee-sign"></i> Fees: ₹500</span>
+          <span class="credential-pill"><i class="fas fa-star"></i> 5000+ Patients</span>
+        </div>
+
+        <a href="#appointment" class="btn-book"><i class="fas fa-calendar-alt"></i> Book an Appointment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT & CTA -->
+<section class="appt-cta" id="appointment">
+  <div class="container">
+    <div class="appt-inner">
+      <div class="appt-cta-left reveal">
+        <span class="section-label" style="color:var(--teal);">Get In Touch</span>
+        <h2>Need Medical <span>Assistance?</span><br>We Are Here For You.</h2>
+        <p>Fill in the form or reach us directly. Our team will confirm your appointment within the hour.</p>
+
+        <div class="contact-options">
+          <a href="tel:9136373182" class="contact-item">
+            <i class="fas fa-phone-alt" style="width:38px;height:38px;background:var(--teal);border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-size:14px;flex-shrink:0;"></i>
+            <span>+91 91363 73182</span>
+          </a>
+          <a href="https://wa.me/918459106272" class="contact-item" target="_blank">
+            <i class="fab fa-whatsapp" style="width:38px;height:38px;background:#25d366;border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-size:16px;flex-shrink:0;"></i>
+            <span>WhatsApp: +91 84591 06272</span>
+          </a>
+          <a href="https://www.instagram.com/newradhikahospital2025" class="contact-item" target="_blank">
+            <i class="fab fa-instagram" style="width:38px;height:38px;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-size:16px;flex-shrink:0;"></i>
+            <span>@newradhikahospital2025</span>
+          </a>
+          <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjIxvP3h6KUAxUAAAAAHQAAAAAQDA..i&ftid=0x3be7b1007983f789:0xb7df0fa271cb1b72" class="contact-item" target="_blank">
+            <i class="fas fa-map-marker-alt" style="width:38px;height:38px;background:#e74c3c;border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-size:15px;flex-shrink:0;"></i>
+            <span style="font-size:13px;line-height:1.5;">Rashmi Park, A1 Wings, Shital Nagar,<br>MTNL Rd, near Bindiya Bar, Mira Bhayandar – 401107</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="appt-form reveal">
+        <h3>Book an Appointment</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Ramesh">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Sharma">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 98765 43210">
+        </div>
+        <div class="form-group">
+          <label>Department</label>
+          <select>
+            <option value="">Select Department</option>
+            <option>Dialysis</option>
+            <option>Emergency</option>
+            <option>General Medicine</option>
+            <option>ICU Enquiry</option>
+            <option>Homoeopathic Consultation</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date">
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <select>
+              <option>Morning (9am – 12pm)</option>
+              <option>Afternoon (12pm – 4pm)</option>
+              <option>Evening (4pm – 8pm)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message (Optional)</label>
+          <textarea placeholder="Briefly describe your concern…"></textarea>
+        </div>
+        <button class="btn-submit" onclick="handleSubmit(event)">
+          <i class="fas fa-paper-plane"></i> Confirm Appointment
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:0">
+      <span class="section-label" style="display:block;text-align:center;">Patient Stories</span>
+      <h2 class="section-title" style="text-align:center;margin:0 auto 10px">What Our Patients Say</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center;">Real experiences from the families we have cared for.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"My father needed dialysis three times a week. The team at Radhika Hospital made every visit comfortable and professionally handled. Truly a life-saving facility."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SK</div>
+          <div>
+            <div class="testi-name">Suresh Kamble</div>
+            <div class="testi-role">Patient's Son</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Dr. Vijay's homoeopathic treatment helped me recover from chronic joint pain after months of suffering. His patience and expertise are exceptional."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PM</div>
+          <div>
+            <div class="testi-name">Priya Marathe</div>
+            <div class="testi-role">Patient</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Emergency services at 2 AM and the team was ready and fully equipped. They stabilised my husband within minutes. We are forever grateful to this hospital."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AN</div>
+          <div>
+            <div class="testi-name">Anjali Nair</div>
+            <div class="testi-role">Patient's Wife</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>New Radhika Multispeciality<br>Hospital &amp; Dialysis Centre</h3>
+      <p>Delivering compassionate multispeciality healthcare — dialysis, emergency &amp; homeopathy — to the Mira Road East community since 2014.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/918459106272" target="_blank" class="footer-social"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/newradhikahospital2025" target="_blank" class="footer-social"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctor">Our Doctor</a></li>
+        <li><a href="#appointment">Book Appointment</a></li>
+        <li><a href="tel:9136373182">Emergency Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Departments</h4>
+      <ul class="footer-links">
+        <li><a href="#">Dialysis Centre</a></li>
+        <li><a href="#">ICU / Ventilator / CPAP</a></li>
+        <li><a href="#">24×7 Emergency</a></li>
+        <li><a href="#">General Medicine</a></li>
+        <li><a href="#">General Surgery</a></li>
+        <li><a href="#">Paediatrics</a></li>
+        <li><a href="#">Pathology Lab</a></li>
+        <li><a href="#">Physiotherapy</a></li>
+        <li><a href="#">Kidney Stone Centre</a></li>
+        <li><a href="#">Neurology &amp; Psychiatry</a></li>
+        <li><a href="#">ENT</a></li>
+        <li><a href="#">Dermatology</a></li>
+        <li><a href="#">Orthopedics &amp; Spine</a></li>
+        <li><a href="#">Diabetic Care</a></li>
+        <li><a href="#">Liposuction &amp; Weight Mgmt</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Rashmi Park, A1 Wings, Shital Nagar,<br>MTNL Rd, near Bindiya Bar,<br>Mira Bhayandar, Maharashtra – 401107<br><a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjIxvP3h6KUAxUAAAAAHQAAAAAQDA..i&ftid=0x3be7b1007983f789:0xb7df0fa271cb1b72" target="_blank" style="color:var(--teal);font-size:12px;">📍 Get Directions on Google Maps</a></span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>+91 91363 73182</span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fab fa-whatsapp"></i>
+        <span>+91 84591 06272</span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fas fa-clock"></i>
+        <span>Emergency: 24 × 7<br>OPD: 8:00 AM – 11:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 New Radhika Multispeciality Hospital & Dialysis Centre, Mira Road East. All rights reserved.</span>
+    <span>Designed with ❤ for patient care</span>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  var nl = document.getElementById('navLinks');
+  nl.classList.toggle('open');
+}
+
+// Scroll reveal
+var reveals = document.querySelectorAll('.reveal');
+function checkReveal() {
+  var wh = window.innerHeight;
+  reveals.forEach(function(el) {
+    var top = el.getBoundingClientRect().top;
+    if (top < wh - 60) el.classList.add('visible');
+  });
+}
+window.addEventListener('scroll', checkReveal);
+checkReveal();
+
+// Counter animation
+function animateCounter(el, target, suffix) {
+  var start = 0;
+  var duration = 1800;
+  var step = target / (duration / 16);
+  function update() {
+    start = Math.min(start + step, target);
+    el.textContent = Math.floor(start).toLocaleString() + (suffix || '');
+    if (start < target) requestAnimationFrame(update);
+  }
+  update();
+}
+
+var countersStarted = false;
+function checkCounters() {
+  if (countersStarted) return;
+  var statsEl = document.querySelector('.stats-grid');
+  if (!statsEl) return;
+  var rect = statsEl.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 80) {
+    countersStarted = true;
+    document.querySelectorAll('.stat-num[data-target]').forEach(function(el) {
+      var t = parseInt(el.getAttribute('data-target'));
+      var suffix = el.textContent.includes('+') ? '+' : '';
+      animateCounter(el, t, '');
+    });
+  }
+}
+window.addEventListener('scroll', checkCounters);
+checkCounters();
+
+// Form submission
+function handleSubmit(e) {
+  e.preventDefault();
+  var btn = e.target;
+  btn.innerHTML = '<i class="fas fa-check"></i> Request Sent!';
+  btn.style.background = '#16a34a';
+  setTimeout(function() {
+    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Confirm Appointment';
+    btn.style.background = '';
+  }, 3000);
+}
+
+// Close nav on link click (mobile)
+document.querySelectorAll('#navLinks a').forEach(function(a) {
+  a.addEventListener('click', function() {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
